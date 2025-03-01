@@ -1,0 +1,37 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+    "rules": {
+        "curly": ["error", "multi-line"],
+        "sort-imports": "off",
+        "import/no-internal-modules": "off",
+        "import/no-extraneous-dependencies": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/consistent-type-assertions": "off",
+        "@typescript-eslint/naming-convention": [
+            "error",
+            {
+                "selector": "variable",
+                "format": ["camelCase", "PascalCase", "snake_case", "UPPER_CASE"],
+                "leadingUnderscore": "allow"
+            }
+        ],
+        "prefer-for-of": "off",
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": "off",
+        "@typescript-eslint/no-empty-interface": "off",
+        "no-empty": "off",
+        "@typescript-eslint/no-namespace": "off",
+        "react/self-closing-comp": "off",
+        "react/jsx-no-bind": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "radix": "off",
+        "no-console": "off",
+        "max-classes-per-file": "off"
+    }
+}
